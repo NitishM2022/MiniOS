@@ -16,7 +16,7 @@ The Direct Page Manager handles the allocation and deallocation of memory pages 
 
 The Indirect Page Manager manages memory pages indirectly by leveraging user-space memory and recursive page tables. It enables the creation of Virtual Memory Pools and provides custom implementations of the new and delete operators, allowing users to allocate and free memory seamlessly within the virtual memory space.
 
-### Thread Scheduling
+### Thread Scheduler
 
 The Thread Scheduling feature manages the execution of threads, ensuring efficient CPU utilization. We implemented a custom scheduler that allows threads to yield control of the CPU and resume execution via a ready-queue, facilitating seamless context switching. In order to protect mututally exclusive sections we disable and reenable interrupts. Additionally, the scheduler efficiently handles zombie threads by cleaning up and deallocating their stack once a thread completes execution and returns, ensuring proper resource management.
 
