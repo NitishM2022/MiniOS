@@ -3,6 +3,7 @@
 
 # Object files
 *.o
+*.bin
 *.ko
 *.obj
 *.elf
@@ -50,3 +51,12 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Latex
+/*_tex
+*.zip
+
+# Misc
+.DS_Store
+.vs
+.vscode
